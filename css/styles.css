@@ -615,6 +615,29 @@ p {
   font-size: 0.875rem;
 }
 
+.footer-legal {
+  display: inline-block;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-legal a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+
+.footer-legal a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-sep {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
 /* ===================================
    PAGE SPECIFIC STYLES
    =================================== */
@@ -1906,6 +1929,12 @@ p {
   font-weight: 600;
 }
 
+.team-photo svg {
+  width: 60px;
+  height: 60px;
+  stroke: var(--white);
+}
+
 .team-info {
   padding: 0 var(--spacing-md) var(--spacing-lg);
 }
@@ -1941,6 +1970,7 @@ p {
 .certification-item {
   text-align: center;
   padding: var(--spacing-md);
+  max-width: 250px;
 }
 
 .certification-badge {
@@ -1955,6 +1985,12 @@ p {
   color: var(--white);
   font-size: 2.5rem;
   box-shadow: var(--shadow-md);
+}
+
+.certification-badge svg {
+  width: 48px;
+  height: 48px;
+  stroke: var(--white);
 }
 
 .certification-item h4 {
@@ -2070,5 +2106,193 @@ a {
 
   .partner-logo-container img {
     max-width: 220px;
+  }
+}
+
+/* ===================================
+   LEGAL CONTENT (Privacy Policy)
+   =================================== */
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-content h2 {
+  font-size: 1.5rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--dark-navy);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.legal-content ul {
+  list-style: disc;
+  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.legal-content li {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xs);
+  line-height: 1.7;
+}
+
+.legal-content a {
+  color: var(--primary-blue);
+}
+
+.legal-content a:hover {
+  color: var(--orange-accent);
+}
+
+/* ===================================
+   PRODUCT PAGE STYLES
+   =================================== */
+.product-hero {
+  background: linear-gradient(135deg, var(--dark-navy), var(--primary-blue));
+  padding: var(--spacing-xl) 0;
+  color: var(--white);
+}
+
+.product-hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.product-hero-text h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.product-hero-text .tagline {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: var(--spacing-md);
+}
+
+.product-hero-logo {
+  text-align: center;
+}
+
+.product-hero-logo img {
+  max-width: 250px;
+  background: var(--white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+}
+
+.product-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.product-feature-card {
+  background: var(--white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.product-feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-feature-card .icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--dark-navy));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.product-feature-card h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.product-feature-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.product-benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.benefit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.benefit-card .check {
+  width: 30px;
+  height: 30px;
+  background: var(--orange-accent);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.benefit-card h4 {
+  margin-bottom: 4px;
+}
+
+.benefit-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .product-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .product-hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .product-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-benefits-list {
+    grid-template-columns: 1fr;
   }
 }

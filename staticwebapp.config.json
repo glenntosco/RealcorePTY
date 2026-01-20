@@ -17,6 +17,34 @@
       "rewrite": "/contact.html"
     },
     {
+      "route": "/p4warehouse",
+      "rewrite": "/p4warehouse.html"
+    },
+    {
+      "route": "/p4books",
+      "rewrite": "/p4books.html"
+    },
+    {
+      "route": "/p4customs",
+      "rewrite": "/p4customs.html"
+    },
+    {
+      "route": "/privacy",
+      "rewrite": "/privacy.html"
+    },
+    {
+      "route": "/terms",
+      "rewrite": "/terms.html"
+    },
+    {
+      "route": "/cookies",
+      "rewrite": "/cookies.html"
+    },
+    {
+      "route": "/legal",
+      "rewrite": "/legal.html"
+    },
+    {
       "route": "/nosotros",
       "redirect": "/about",
       "statusCode": 301
@@ -34,6 +62,21 @@
     {
       "route": "/contacto",
       "redirect": "/contact",
+      "statusCode": 301
+    },
+    {
+      "route": "/privacidad",
+      "redirect": "/privacy",
+      "statusCode": 301
+    },
+    {
+      "route": "/terminos",
+      "redirect": "/terms",
+      "statusCode": 301
+    },
+    {
+      "route": "/aviso-legal",
+      "redirect": "/legal",
       "statusCode": 301
     }
   ],
