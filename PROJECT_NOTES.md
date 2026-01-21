@@ -7,9 +7,9 @@
 | **Legal Name** | REALCORE GROUP, S.E.P. |
 | **Trade Name** | RealCore PTY |
 | **RUC (Tax ID)** | 155763834-2-2025 |
-| **Phone** | +507 6276-0140 |
-| **WhatsApp** | 50762760140 |
-| **Email** | luis@realcorepty.com |
+| **Phone** | +507 6618-4791 |
+| **WhatsApp** | 50766184791 |
+| **Email** | info@realcorepty.com |
 | **Location** | Panama City, Panama |
 | **Founded** | 2025 |
 | **Business Type** | Authorized P4 Software Reseller |
@@ -153,7 +153,7 @@ Configured in `staticwebapp.config.json`:
 
 ## Important Notes
 
-1. **Phone number changed** from `+507 6618-4791` to `+507 6276-0140` (January 2026)
+1. **Phone number changed** from `+507 6618-4791` to `+507 6618-4791` (January 2026)
 
 2. **Copyright year:** 2025 (company founding year)
 
